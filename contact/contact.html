@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Lucent Real Estate Website</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1><strong>Contact Us - The Lucent Real Estate Site</strong></h1>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../about/about.html">About Us</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <p>We'd love to hear from you! Whether you have questions about a property, need assistance, or just want to say hello, feel free to contact us.</p>
+                    <ul>
+                        <li><strong>Address:</strong> 233 Real Estate St, Amakom, Kumasi, Ghana</li>
+                        <li><strong>Phone:</strong> (+223) 547802654</li>
+                        <li><strong>Email:</strong> info@gabrieljubinboakye.com</li>
+                    </ul>
+                </div>
+                <div class="contact-form">
+                    <h3>Send Us a Message</h3>
+                    <form action="submit_form.php" method="POST">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                        
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                        
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="copyright-year">2024</span> Lucent Real Estate Website</p>
+    </footer>
+    <script>
+        document.getElementById('copyright-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
